@@ -29,12 +29,12 @@ namespace _49_SeleniumLabTask
             driver.FindElement(By.Id("LOG IN")).Click();
             String at = driver.Title;
 
-            String et = "Shop Shajgoj";
+            String et = "Asteria";
             if (at == et)
             {
                 Console.WriteLine("Test Successful");
                 IWebElement element2 =
-                driver.FindElement(By.XPath("/html/body/table/tbody/tr[4]/td/div/div/div[2]/a"));
+                driver.FindElement(By.XPath("//*[@id='username']"));
                 element2.Click();
             }
             else
