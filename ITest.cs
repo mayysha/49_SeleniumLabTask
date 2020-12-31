@@ -21,15 +21,15 @@ namespace _49_SeleniumLabTask
         [Test]
         public void test()
         {
-            driver.Url = "http://result.ewubd.edu";
-            IWebElement element = driver.FindElement(By.Name("txtstudid"));
-            element.SendKeys("Your Id");
-            IWebElement password = driver.FindElement(By.Name("txtpass"));
-            password.SendKeys("Your Password");
-            driver.FindElement(By.Id("studlogin")).Click();
+            driver.Url = "https://asteriabd.com/";
+            IWebElement element = driver.FindElement(By.Name("username"));
+            element.SendKeys("mayshaafrin@iut-dhaka.edu");
+            IWebElement password = driver.FindElement(By.Name("password"));
+            password.SendKeys("xGztKww7M3Yfyuh");
+            driver.FindElement(By.Id("LOG IN")).Click();
             String at = driver.Title;
 
-            String et = "East West University";
+            String et = "Shop Shajgoj";
             if (at == et)
             {
                 Console.WriteLine("Test Successful");
